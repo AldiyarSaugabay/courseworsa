@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #1a1a1a;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid #e63946;
+}
+
+.headert {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #e63946;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search {
+    position: relative;
+}
+
+.search-input {
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    color: white;
+    padding: 10px 40px 10px 15px;
+    border-radius: 4px;
+    width: 240px;
+    font-size: 14px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+.search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #e63946;
+}
+
+.login {
+    padding: 10px 24px;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.login:hover {
+    border-color: #e63946;
+    background: #2a2a2a;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #2a2a2a;
+    border-top: 1px solid #3a3a3a;
+}
+
+.navigation {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 18px 0;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e63946;
+}
+
+/* MAIN */
+.whower {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    color: white;
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.whoslog{
+    font-size: 50px;
+    font-weight: 800; /* FIXED: Removed extra 'px' */
+    margin-top: 10px;
+    margin-bottom:10px;
+    color: #e63946;
+    text-shadow: -2px 2px rgba(134, 134, 134, 0.2);
+}
+.hero11 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Removed unused .herot, .hero12 styles that were duplicated in HTML */
+/* but kept .whotext and .whosub from HTML */
+.whotext {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.whosub {
+    font-size: 20px;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+
+/* MAIN */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+.mission {
+    margin-bottom: 80px;
+}
+
+.latet {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+.esco {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.stats12 {
+    background: #1a1a1a;
+    color: white;
+    padding: 60px 30px;
+    margin: 80px 0;
+}
+
+.statscont {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.statnum {
+    font-size: 48px;
+    font-weight: 800;
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+.statla {
+    font-size: 16px;
+    color: #bbb;
+}
+
+.teamsec {
+    margin-bottom: 80px;
+}
+
+.teamint {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 50px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.teagri { /* FIXED: Changed .team-grid to .teagri to match HTML */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.teammem { /* FIXED: Changed .team-member to .teammem to match HTML */
+    text-align: center;
+}
+
+.mphoto {
+    width: 100%;
+    height: 220px;
+    background: #e9e9e9;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.mphoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.mname {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+
+.mrole {
+    font-size: 14px;
+    color: #666;
+}
+
+.ctse {
+    background: #f8f8f8;
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 60px;
+}
+
+.ctset {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.ctsed {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #e63946;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #d62839;
+}
+
+/* FOOTER */
+footer {
+    background: #1a1a1a;
+    color: #999;
+    padding: 40px 30px;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flinks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.flinks a {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.flinks a:hover {
+    color: #e63946;
+}
+
+/* RESOPND */
+@media (max-width: 968px) {
+    .headert, .navigation, .container, .stats12, .ctse, footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .whower {
+        padding: 60px 20px;
+    }
+    .whotext { /* Adjusted selector from .herot to .whotext to match HTML */
+        font-size: 38px;
+    }
+    .whoslog {
+        font-size: 40px;
+    }
+
+    .statscont {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .teagri { /* FIXED: Changed .team-grid to .teagri */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    nav ul {
+        gap: 20px;
+        overflow-x: auto;
+    }
+    .search-input {
+        width: 180px;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .headert {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 15px;
+        gap: 15px;
+    }
+    .right {
+        width: 100%;
+        justify-content: space-between;
+        order: 1; 
+    }
+    .search-input {
+        width: 140px;
+        padding: 8px 35px 8px 12px;
+    }
+    .links {
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 12px;
+        font-size: 13px;
+        overflow-x: auto; 
+        white-space: nowrap; 
+    }
+
+    .whower {
+        padding: 40px 15px;
+    }
+    .whotext { /* Adjusted selector from .herot to .whotext to match HTML */
+        font-size: 32px;
+    }
+    .whoslog {
+        font-size: 30px;
+    }
+    .whosub { /* Adjusted selector from .hero12 to .whosub to match HTML */
+        font-size: 16px;
+    }
+    
+    .latet {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .esco, .teamint, .ctsed {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .mission, .teamsec {
+        margin-bottom: 50px;
+    }
+
+    .statscont {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .statnum {
+        font-size: 40px;
+    }
+
+    .teagri { /* FIXED: Changed .team-grid to .teagri */
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .ctset {
+        font-size: 24px;
+    }
+    .cta-button {
+        padding: 14px 30px;
+        font-size: 15px;
+    }
+
+    .flinks {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
